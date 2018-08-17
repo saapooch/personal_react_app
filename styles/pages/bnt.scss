@@ -1,0 +1,32 @@
+.bnt_wrapper{
+    background: url(/static/images/campbells2.jpg) repeat left top;
+    background-size: 300px;
+}
+
+.BNT{
+    width:100%;
+    height:100%;
+
+    .BNT_title{
+        text-align: center;
+        color: #228DFF;
+    }
+
+    .BNT_backdrop{
+        background-color: white;
+        border-radius: 5px;
+        border: 6px solid $yellow;
+        padding: 15px;
+        -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+    }
+
+    .BNT_col{
+        position: relative;
+        overflow: scroll;
+        max-height: 80vh;
+    }
+
+
+}
