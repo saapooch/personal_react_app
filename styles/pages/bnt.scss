@@ -18,15 +18,17 @@
         border: 6px solid $yellow;
         padding: 15px;
         -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
     }
 
     .BNT_col{
         position: relative;
         overflow: scroll;
         max-height: 80vh;
+        -webkit-overflow-scrolling:touch;
     }
+
 
 
 }
