@@ -24,7 +24,8 @@
 
     .BNT_col{
         position: relative;
-        overflow: scroll;
+        overflow-y: scroll;
+        overflow-x: hidden;
         max-height: 80vh;
         -webkit-overflow-scrolling:touch;
     }
