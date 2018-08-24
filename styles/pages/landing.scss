@@ -20,6 +20,13 @@
         margin:5px;
     }
 
+    @media(min-width: $bp-xl) {
+      h5{
+        margin-top: 50px;
+      }
+
+    }
+
     @media(max-width: $bp-medium) {
         .art{
             position: absolute;

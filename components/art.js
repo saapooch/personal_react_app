@@ -9,14 +9,14 @@ export default class Art extends Component {
 		this.state = { show: true, random:Array.from({length: 27}, () => Math.floor((Math.random() * 1000) + 1))};
 	}
 
-	componentDidMount(){
-		this.setState({ show: !this.state.show });
-		this.interval = setInterval(() => this.setState({ random: Array.from({length: 27}, () => Math.floor((Math.random() * 1000) + 1)) }), 5000);
-	}
-
-	componentWillUnmount() {
-	  clearInterval(this.interval);
-	}
+	// componentDidMount(){
+	// 	this.setState({ show: !this.state.show });
+	// 	this.interval = setInterval(() => this.setState({ random: Array.from({length: 27}, () => Math.floor((Math.random() * 1000) + 1)) }), 5000);
+	// }
+	// 
+	// componentWillUnmount() {
+	//   clearInterval(this.interval);
+	// }
 
 
 	getData(p1, p2, p3, p4, p5, p6){
