@@ -3,18 +3,31 @@ import '../styles/main.scss'
 
 const ListElement = ({href, label}) => (
 	<li className="w-100">
-		<Link href={href}><a className="nav-link pl-0 roboto">{label}</a></Link>
+		<Link href={href}><a className="nav-link navv pl-0 roboto">{label}</a></Link>
 	</li>
 )
 
 
-export default () => (
+export default class Nav extends React.Component {
+
+	componentDidMount(){
+        const script = document.createElement("script");
+
+        script.src = "https://use.fontawesome.com/releases/v5.0.9/js/all.js";
+        script.async = true;
+
+        document.body.appendChild(script);
+    }
+
+	render(){
+
+	return (
 	<aside className="col-12 col-md-3 nav_bar_container">
 		<nav className="navbar navbar-light navbar-expand-md align-items-start flex-md-column flex-row h-50">
 			<a href='/'><span className="navbar-brand">Saahith Pochiraju</span></a>
-			<a href className="navbar-toggler toggle" data-toggle="collapse" data-target=".sidebar">
-			   <span className="navbar-toggler-icon "></span>
-			</a>
+			<button href className="navbar-toggler toggle cbutton--effect-sanja" data-toggle="collapse" data-target=".sidebar">
+			   <i className="fa fa-bars" aria-hidden="true"></i>
+			</button>
 			<div className="collapse navbar-collapse sidebar">
 				<ul className="flex-column navbar-nav w-100 justify-content-between mx-auto">
 					<ListElement href='/about' label='About' />
@@ -43,4 +56,5 @@ export default () => (
 			</div>
 		</nav>
 	</aside>
-)
+	)}
+}

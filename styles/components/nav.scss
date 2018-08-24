@@ -26,8 +26,13 @@
   }
 
   .toggle{
-      margin:10px 0px 0px 0px;
+      margin:13px 0px 0px 0px;
       color:white !important;
+      cursor: pointer;
+      font-size: 150%;
+      border: none;
+        outline:none;
+
   }
 
   .nav-link:hover{
@@ -46,7 +51,7 @@
 
     @media(max-width: $bp-medium) {
 
-        background-color: #FFFFF0;
+        background-color: #2f3542;
 
       .navbar-brand{
          margin:15px -15px 0px;
@@ -54,7 +59,7 @@
          font-family: 'Roboto', sans-serif;
          font-weight: 700;
          font-size: 100%;
-         color:black !important;
+         color:white !important;
       }
 
       .nav-link{
@@ -65,6 +70,10 @@
       .nav-link:hover{
           color:#9975b9 !important;
           font-size: 100%;
+      }
+
+      .navv{
+        color:white !important;
       }
 
       .social-media{
