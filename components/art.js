@@ -36,7 +36,7 @@ export default class Art extends Component {
 					</g>
 				</svg>
 				<h5 className='art'> <span className='art__span'> {this.props.tag} </span> </h5>
-
+				{this.props.children}
 			</Page>
 		)
 	}
