@@ -13,7 +13,7 @@ export default class Art extends Component {
 	// 	this.setState({ show: !this.state.show });
 	// 	this.interval = setInterval(() => this.setState({ random: Array.from({length: 27}, () => Math.floor((Math.random() * 1000) + 1)) }), 5000);
 	// }
-	// 
+	//
 	// componentWillUnmount() {
 	//   clearInterval(this.interval);
 	// }
@@ -27,7 +27,7 @@ export default class Art extends Component {
 	render() {
 		return (
 			<Page style='col landing_wrapper'>
-				<svg height="90%" width="100%" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+				<svg className='art-box' viewBox="0 0 1000 1000" preserveAspectRatio="none">
 					<g fill="none" strokeWidth="15">
 					  <path stroke="#375E97" d={this.getData(this.state.random[0],this.state.random[1], this.state.random[2], this.state.random[3], this.state.random[4], this.state.random[5], this.state.random[6])} />
 					  <path stroke="#FB6542" d={this.getData(this.state.random[7],this.state.random[8], this.state.random[9], this.state.random[10], this.state.random[11], this.state.random[12], this.state.random[13])} />

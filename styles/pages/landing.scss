@@ -20,7 +20,17 @@
         margin:5px;
     }
 
+    .art-box{
+      height:90%;
+      width: 100%;
+    }
+
     @media(min-width: $bp-xl) {
+
+      .art-box{
+        height: 1100px;
+      }
+
       h5{
         margin-top: 50px;
       }
@@ -28,6 +38,12 @@
     }
 
     @media(max-width: $bp-medium) {
+
+      .art-box{
+        height:90%;
+        width: 100%;
+      }
+
         .art{
             position: absolute;
             text-align: center;

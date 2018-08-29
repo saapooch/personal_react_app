@@ -17,6 +17,7 @@ body, html, .container-fluid {
     }
 
     @media(max-width: $bp-medium) {
+
         .wrapper {
             position: relative;
             height: 80vh;
